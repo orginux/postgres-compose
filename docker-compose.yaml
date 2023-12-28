@@ -1,0 +1,9 @@
+version: '3.1'
+
+services:
+  postgres:
+    image: postgres:15.5-alpine3.19
+    container_name: postgres-local
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: 1212
