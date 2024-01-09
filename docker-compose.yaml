@@ -5,5 +5,7 @@ services:
     image: postgres:15.5-alpine3.19
     container_name: postgres-local
     restart: always
+    ports:
+      - 5432:5432
     environment:
       POSTGRES_PASSWORD: 1212
